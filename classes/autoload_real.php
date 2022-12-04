@@ -7,7 +7,7 @@
 
 class Autoloader
 {
-    public const ROOT_DIR = __DIR__ . '../../../';
+    public const ROOT_DIR = __DIR__ . '../../../../';
     public const DEFAULT_NAMESPACE = 'App';
     public const DEFAULT_DIR = 'src';
 
@@ -71,7 +71,7 @@ class Autoloader
         /**
          * Get config.json.
          */
-        $psr4 = self::$config['autoload']['psr-4'];
+        $psr4 = (isset(self::$config['autoload']['psr-4'])) ? self::$config['autoload']['psr-4'] : [];
 
         /**
          * Replace path to class by config.json.

@@ -7,7 +7,7 @@
 
 class ConfigParser
 {
-    const ROOT_DIR         = __DIR__ . '/../../';
+    const ROOT_DIR         = __DIR__ . '/../../../';
     const CONFIG_FILE_PATH = self::ROOT_DIR . 'ppm-config.json';
 
     public array $config;
